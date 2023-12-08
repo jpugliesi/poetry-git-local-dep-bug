@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "example"
+version = "0.1.0"
+description = ""
+authors = ["John Pugliesi <john@viaduct.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+namespace-cli = {git = "https://github.com/adriangb/python-monorepo.git", subdirectory = "poetry/workspaces/cli"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
